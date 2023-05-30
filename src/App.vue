@@ -1,15 +1,16 @@
 <template>
-  <LoginPage/>
+  <!-- <LoginPage/> -->
+  <router-view></router-view>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
-import LoginPage from './login/login.vue'
+// import LoginPage from './login/login.vue'
 
 export default {
   name: 'App',
   components: {
-    LoginPage
+    // LoginPage
   }
 }
 </script>
