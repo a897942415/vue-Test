@@ -1,15 +1,15 @@
 <template>
-  <div class="app">我是根组件</div>
+  <LoginPage/>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import LoginPage from './login/login.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    LoginPage
   }
 }
 </script>
