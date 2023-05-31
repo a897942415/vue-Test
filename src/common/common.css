@@ -1,0 +1,13 @@
+@import url('http://at.alicdn.com/t/c/font_4096634_jz6yg4ljs8.css');
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    margin: 0;
+    padding: 0;  
+}
+.icon-size{
+    font-size:0.6rem;
+}

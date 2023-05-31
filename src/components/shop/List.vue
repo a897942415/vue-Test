@@ -1,6 +1,6 @@
 <template>
   <div class="shop-list">
-    分类
+    这是分类页面
     <TabBar />
   </div>
 </template>

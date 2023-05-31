@@ -3,28 +3,28 @@ import {createRouter,createWebHistory } from 'vue-router';
 
 const routes = [
     {
-        paht:'/',
+        path:'/home',
         name:'HelloWorld',
-        //路由懒加载 import('@/components/HelloWorld')
-        component: import('@/components/HelloWorld.vue')
+        component: ()=> import('@/components/shop/HelloWorld.vue')
     },
     {
-        paht:'/',
+        path:'/',
+        redirect: '/home',
+    },
+    {
+        path:'/list',
         name:'list',
-        //路由懒加载 import('@/components/HelloWorld')
-        component: import('@/components/List.vue')
+        component: ()=> import('@/components/shop/List.vue')
     },
     {
-        paht:'/',
+        path:'/car',
         name:'car',
-        //路由懒加载 import('@/components/HelloWorld')
-        component: import('@/components/Car.vue')
+        component: ()=> import('@/components/shop/Car.vue')
     },
     {
-        paht:'/',
+        path:'/my',
         name:'my',
-        //路由懒加载 import('@/components/HelloWorld')
-        component: import('@/components/My.vue')
+        component: ()=> import('@/components/shop/My.vue')
     },
 ]
 const router = createRouter({
