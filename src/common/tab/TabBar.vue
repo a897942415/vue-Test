@@ -1,10 +1,9 @@
 <template>
   <div class="tab-bar">
-    
     <ul>
       <li v-for="(item,index) in routerList" :key="index" @click="switchTab(item)">
-        <i :class="item.class"></i>
-        <span>{{ item.title }}</span>
+        <i :class="$route.path.includes(item.path)? item.selected: item.class"></i>
+        <span :class="$route.path.includes(item.path)? 'red': null">{{ item.title }}</span>
       </li>
     </ul>
   </div>
@@ -46,7 +45,6 @@ export default {
   methods:{
     switchTab(item){
       if(this.$route.path == item.path) return;
-      console.log(this.$route,this.$router)
       this.$router.replace(item.path);
     },
   }
@@ -61,6 +59,7 @@ export default {
   bottom: 0;
   left: 0;
   background: #fff;
+  z-index: 9999999;
 }
 .tab-bar ul{
   display: flex;
@@ -73,5 +72,8 @@ export default {
 }
 .tab-bar ul li span{
   font-size:0.5rem;
+}
+.red{
+  color: red;
 }
 </style>

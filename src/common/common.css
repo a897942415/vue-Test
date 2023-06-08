@@ -1,4 +1,4 @@
-@import url('http://at.alicdn.com/t/c/font_4096634_jz6yg4ljs8.css');
+@import url('http://at.alicdn.com/t/c/font_4096634_3glxpqp2vvo.css');
 ul,ol{
     margin: 0;
     padding: 0;
@@ -7,6 +7,9 @@ ul,ol{
 li{
     margin: 0;
     padding: 0;  
+}
+body{
+    margin: 0;
 }
 .icon-size{
     font-size:0.6rem;

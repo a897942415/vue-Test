@@ -6,4 +6,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/api/home', function(req, res, next) {
+  res.send({
+    code:0,
+    data:{
+      a:2
+    }
+  });
+});
+
 module.exports = router;
